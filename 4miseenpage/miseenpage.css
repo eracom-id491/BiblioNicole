@@ -1,0 +1,97 @@
+/* Hard reset is hard */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: url('http://www.avcesar.com/source/software/tmdb/3684/extrait_99-francs_2.jpg') top center no-repeat #ecf0f1;
+  background-size: cover;
+  color: #34495e;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  height: 100vh;
+}
+body:before {
+  content:'';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ecf0f1;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+a {
+  color: #c0392b;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2rem;
+}
+
+.bullshit {
+  margin: 1rem 0;
+}
+.bullshit:after {
+  content: '.';
+}
+.content small {
+  color: #787878;
+}
+
+.about {
+  width: 18.75rem;
+  padding: 1.25rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 325ms ease-in-out;
+  text-align: left;
+}
+
+.footer {
+  font-size: 0.75rem;
+  position: fixed;
+  bottom: 1.25rem;
+  left: 0;
+  right: 0;
+}
+
+.touch-instructions,
+.touch .notouch-instructions {
+  display: none;
+}
+.touch .touch-instructions,
+.notouch-instructions {
+  display: block;
+}
